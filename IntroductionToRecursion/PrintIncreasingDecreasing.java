@@ -7,12 +7,13 @@ public class Main {
         // write your code here
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        printIncreasing(n);
+        pdi(n);
     }
 
-    public static void printIncreasing(int n){
-        if(n == 0) return;
-        printIncreasing(n-1);
+    public static void pdi(int n){
+        if(n==0) return;
+        System.out.println(n);
+        pdi(n-1);
         System.out.println(n);
     }
 
